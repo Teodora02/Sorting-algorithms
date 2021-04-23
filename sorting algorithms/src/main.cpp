@@ -18,6 +18,9 @@ int* generateArray( int size )
     srand( time( nullptr ) );
     int* array = new int[size];
     for( int i = 0; i < size; ++i ) {
+        ///array[i] = -i + 1000000; /// desc array (fara +const, nu merge pt count si radix (fara nr negative!)
+        ///array[i] = 50; /// constant array
+        ///array[i] = i; /// ascending array
         array[i] = rand() % MAX_VALUE;      
     }
 
